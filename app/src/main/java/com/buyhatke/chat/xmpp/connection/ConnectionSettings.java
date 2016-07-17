@@ -4,7 +4,7 @@ package com.buyhatke.chat.xmpp.connection;
  * Created by sachin.kasaraddi on 16/07/16.
  */
 public class ConnectionSettings {
-    private String host = "192.168.0.5";
+    private String host = "";
     private String userName;
     private String password;
     private String resource = "BuyHatke";
