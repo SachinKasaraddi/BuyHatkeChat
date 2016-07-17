@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_ripple_drawable"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_weight="0.40"
+            android:scaleType="center"
+            android:src="@drawable/ic_account" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.60"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="User Name"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_last_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Recent Message"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_registration_margin_top"
+            android:gravity="center"
+            android:padding="@dimen/text_registration_padding"
+            android:text="@string/text_registration_welcome"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/text_registration_font_size"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_welcome"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:hint="user"
+                android:text=""
+                android:textColor="@color/textColorWhite"
+                android:textColorHint="@color/textColorWhite"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_phone"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:background="@color/textColorWhite"
+                android:elevation="5dp"
+                android:text="LOGIN"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+            <!--
+
+                        <Button
+                            android:id="@+id/btn_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.0"
+                            android:padding="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/textColorWhite"
+                            android:text="@string/btn_register"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp"
+                            android:elevation="5dp"
+                            android:layout_gravity="center_horizontal" />
+            -->
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_btn"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

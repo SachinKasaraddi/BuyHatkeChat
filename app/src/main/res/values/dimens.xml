@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--Registration screen -->
+    <dimen name="text_registration_margin_top">60dp</dimen>
+    <dimen name="text_registration_font_size">24dp</dimen>
+    <dimen name="text_registration_padding">5dp</dimen>
+</resources>

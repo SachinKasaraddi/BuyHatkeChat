@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:autoLink="all"
+    android:background="@drawable/message_incoming_selected_blue"
+    android:paddingBottom="8dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/txt_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_message_content"
+        android:layout_toRightOf="@+id/txt_message_content"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:textColor="#056E31"
+        android:text="11:36 AM" />
+
+    <TextView
+        android:linksClickable="true"
+        android:autoLink="all"
+        android:id="@+id/txt_message_content"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:maxWidth="230dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="isdfsfd " />
+
+</RelativeLayout>
